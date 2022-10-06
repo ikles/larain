@@ -1,0 +1,796 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1920px"-->
+  <title>Const</title>    
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/main2.css">
+  
+</head>
+<body>  
+
+  <style>  
+
+
+
+    html {
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      font-family: 'Mazzard M', sans-serif; 
+    }
+
+    .wrapper {
+      width: 1340px;          
+      font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 16px;  
+  color: #4C4B66;
+         
+    }
+    .contain {  
+      margin-right: auto;
+      margin-left: auto;
+      /*
+      width: 1170px;*/
+      /*1199*/
+      width: 1280px 
+
+      /*992
+      width: 708px 
+      */
+
+      /*570
+      width: 100%
+      padding-left: 20px
+      padding-right: 20px
+      */
+    }
+
+
+
+
+    .bottom-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+
+
+
+
+  </style>
+
+  <script>
+
+    let project = document.querySelector('title').textContent;
+    console.log(project)
+  </script>
+
+
+
+
+  
+<div class="wrapper bord">
+ <div class="header" style="position: relative;"><div class="header__bar" style="position: absolute; left: 0px; top: 0px; height: 100%; background-color: rgb(255, 255, 255); display: flex; padding-right: 26px; width: auto; flex-direction: column; align-items: center; padding-left: 26px;"><a class="contact-us" style="display: inline-flex; flex-direction: column; justify-content: flex-start; align-items: center;"><span class="contacts__title" style="font-weight: 700; font-size: 12px; line-height: 1.3; text-align: center; text-transform: uppercase; color: rgb(81, 81, 81); margin-bottom: 12px; display: inline-block;">Связаться<br>
+с нами</span><span class="contact-us__icon-block" style="display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: rgba(188, 32, 36, 0.3); border-radius: 50%; overflow: hidden; flex: 0 0 auto;"><span class="contact-us__icon" style="border-radius: 50%; overflow: hidden; display: inline-flex; width: 33px; height: 33px; flex: 0 0 auto; background: url(&quot;img/phone-wh.svg&quot;) center no-repeat rgb(151, 30, 42);"></span></span></a><div class="header__bar-line" style="flex: 1 1 auto; width: 1px; background-color: rgba(0, 0, 0, 0.12); margin-top: 22px; margin-bottom: 22px;"></div><div class="socials" style="margin-top: auto; margin-bottom: 70px;"><span class="contacts__title" style="font-weight: 700; font-size: 12px; line-height: 1.3; text-align: center; text-transform: uppercase; color: rgb(81, 81, 81); margin-bottom: 12px; display: inline-block;">Мы в соцсетях</span><div class="socials__list" style="margin-top: 17px; display: flex; flex-direction: column; align-items: center;"><a class="socials__item _fb" style="display: inline-flex; margin-bottom: 20px; width: 25px; height: 25px; border-radius: 50%; overflow: hidden; flex: 0 0 auto; background-image: url(&quot;img/fb.svg&quot;); background-repeat: no-repeat; background-position: left top;"></a><a class="socials__item _inst" style="display: inline-flex; margin-bottom: 20px; width: 25px; height: 25px; border-radius: 50%; overflow: hidden; flex: 0 0 auto; background-image: url(&quot;img/inst.svg&quot;); background-repeat: no-repeat; background-position: left top;"></a><a class="socials__item _you" style="display: inline-flex; margin-bottom: 20px; width: 25px; height: 25px; border-radius: 50%; overflow: hidden; flex: 0 0 auto; background-image: url(&quot;img/you.svg&quot;); background-repeat: no-repeat; background-position: left top;"></a></div></div></div><div class="contain"><div class="top__row" style="display: flex; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.06); padding-top: 30px; padding-bottom: 21px;"><a class="logo" style="display: inline-flex; align-items: center; margin-right: 58px;"><span class="logo__img-wrap" style="display: inline-block; width: 210px; margin-right: 31px; flex: 0 0 auto;"><img src="img/logo.svg" style="width: 100%;" class="logo__img"></span><span class="logo__slogan" style="font-size: 12px; line-height: 1.2; text-transform: uppercase; color: rgb(65, 65, 65); flex: 0 0 auto;">Перевозка грузов <br>
+и таможенное<br>
+оформление</span></a><div class="col-mnu" style="flex: 0 0 auto;">
+<div class="hidden-mnu" style="display: none;">
+<a href="#" class="toggle-mnu"><span></span></a>
+</div>
+
+ <ul class="top__mnu" style="display: flex;">
+ <li class="top__mnu-li" style="margin-right: 25px;"><a class="top__mnu-link" style="font-weight: 700; font-size: 15px;text-transform: uppercase; color: rgb(65, 65, 65);">Наши услуги</a></li>
+ <li class="top__mnu-li" style="margin-right: 25px;"><a class="top__mnu-link" style="font-weight: 700; font-size: 15px;text-transform: uppercase; color: rgb(65, 65, 65);">О компании</a></li><li class="top__mnu-li" style="margin-right: 25px;"><a class="top__mnu-link" style="font-weight: 700; font-size: 15px;text-transform: uppercase; color: rgb(65, 65, 65);">География</a></li><li class="top__mnu-li" style="margin-right: 25px;"><a class="top__mnu-link" style="font-weight: 700; font-size: 15px;text-transform: uppercase; color: rgb(65, 65, 65);">Отзывы</a></li><li class="top__mnu-li" style="margin-right: 25px;"><a class="top__mnu-link" style="font-weight: 700; font-size: 15px;text-transform: uppercase; color: rgb(65, 65, 65);">Контакты</a></li></ul>
+ 
+ </div><div class="top__contacts" style="margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: flex-start;"><a class="top__mail" style="display: inline-flex; font-size: 22px; text-transform: uppercase; color: rgb(160, 31, 48); font-weight: 700; padding-left: 31px; background-image: url(&quot;img/phone.svg&quot;); background-repeat: no-repeat; background-position: left center; line-height: 20px;">8 (800) 555-10-76</a><br><a class="w-a redbord" style="display: inline-block; margin-top: 8px; font-size: 13px; text-transform: uppercase; color: rgb(65, 65, 65); padding-left: 18px; background-image: url(&quot;img/mail.svg&quot;); background-repeat: no-repeat; line-height: 0.7; background-position: left center;">sales@lerain.ru</a></div></div><div class="banner" style="padding-top: 132px; padding-bottom: 243px;"><div class="banner__title" style="font-weight: 700; font-size: 46px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88);">Перевозка грузов </div><div class="banner__subtitle" style="font-weight: 700; font-size: 38px; line-height: 1.2; text-transform: uppercase; color: rgb(144, 30, 55);">и таможенное оформление</div><p class="banner__text" style="font-size: 16px; line-height: 1.3; margin-top: 19px;">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. Выстраиваем оптимальную логистику учитывающую скорость доставки и транспортные затраты на всем маршруте следования.</p><a class="banner__btn" style="font-weight: 700; font-size: 14px; text-transform: uppercase; color: rgb(29, 24, 104); background-image: url(&quot;img/btn-arrow.svg&quot;); background-repeat: no-repeat; background-position: left center; padding-left: 45px; display: inline-flex; line-height: 2.5;">Получить расчет</a></div></div></div>
+<div class="calculate" style="background: rgb(29, 24, 104); display: flex; align-items: flex-end; height: 100px;"><div class="contain"><form class="calculate-form" style="display: flex; align-items: flex-end;"><div class="calculate-form__col _active" style="border-right: 1px solid rgb(0, 0, 0); padding-left: 36px; padding-right: 36px; width: 20%; display: flex; flex-direction: column; height: 105px; justify-content: center; background: url(&quot;img/form-search.svg&quot;) left 6px top 15px no-repeat; border-radius: 6px 6px 0px 0px; position: relative;"><div class="calculate-form__label" style="font-size: 10px; line-height: 1.2; text-transform: uppercase; color: rgb(255, 255, 255); opacity: 0.6; margin-bottom: 6px;">Отправление</div><input class="calculate-form__input" type="text" placeholder="Откуда" style="font-weight: 700; font-size: 18px; color: rgb(255, 255, 255); border: none; padding-left: 0px; padding-right: 0px; width: 100%;"></div><div class="calculate-form__col _where" style="border-right: 1px solid rgb(0, 0, 0); padding-left: 36px; padding-right: 36px; width: 20%; position: relative; height: 100px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column;"><div class="calculate-form__label" style="font-size: 10px; line-height: 1.2; text-transform: uppercase; color: rgb(255, 255, 255); opacity: 0.6; margin-bottom: 6px;">Назначение</div><input class="calculate-form__input" type="text" placeholder="Куда" style="font-weight: 700; font-size: 18px; color: rgb(255, 255, 255); border: none; padding-left: 0px; padding-right: 0px; width: 100%;"><div class="calculate-form__arrows" style="position: absolute;left: 0px;top: 0;background: url(&quot;img/where-arrows.svg&quot;) center 
+no-repeat;border: 1px solid rgb(45, 39, 133);width: 36px;height: 36px;border-radius: 50%;overflow: hidden;transform: translate(-50%, 0);"></div></div><div class="calculate-form__col" style="border-right: 1px solid rgb(0, 0, 0); padding-left: 36px; padding-right: 36px; width: 20%; height: 100px; display: flex; flex-direction: column; justify-content: center;"><div class="calculate-form__label" style="font-size: 10px; line-height: 1.2; text-transform: uppercase; color: rgb(255, 255, 255); opacity: 0.6; margin-bottom: 6px;">Ваше</div><input class="calculate-form__input" type="text" placeholder="Имя" style="font-weight: 700; font-size: 18px; color: rgb(255, 255, 255); border: none; padding-left: 0px; padding-right: 0px; width: 100%;"></div><div class="calculate-form__col" style="border-right: 1px solid rgb(0, 0, 0); padding-left: 36px; padding-right: 36px; width: 20%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; height: 100px;"><div class="calculate-form__label" style="font-size: 10px; line-height: 1.2; text-transform: uppercase; color: rgb(255, 255, 255); opacity: 0.6; margin-bottom: 6px;">Контактный телефон</div><input class="calculate-form__input" type="text" placeholder="+7 (___) ___-__-__" style="font-weight: 700; font-size: 18px; color: rgb(255, 255, 255); border: none; padding-left: 0px; padding-right: 0px; width: 100%;"></div><span class="calculate-form__btn" style="display: inline-flex; align-items: center; justify-content: center; height: 100px; font-weight: 700; font-size: 14px; text-transform: uppercase; color: rgb(255, 255, 255); background: rgb(188, 32, 36); width: 20%; flex: 1 1 auto; padding-left: 15px; padding-right: 15px; text-align: center;">BUTTON Получить расчет BUTTON</span></form></div></div><div class="advantages" style="background: url(&quot;img/advantages-bg-r.svg&quot;) right -10px bottom -10px
+ 
+no-repeat rgb(23, 19, 88); padding-top: 93px; padding-bottom: 102px;"><div class="contain"><div class="advantages__row" style="display: flex; "><div class="advantages__col-l" style="flex: 1 1 auto; position: relative;"><img src="img/advantages-ship.png" class="advantages__img" style="position: absolute; right: 105px; top: -300px; "></div><div class="advantages__col-r" style="width: 773px;"><div class="advantages__title" style="font-weight: 700; font-size: 28px; line-height: 1.2; text-transform: uppercase; color: rgb(255, 255, 255); margin-bottom: 21px;">Жд перевозки, доставка груза Владивосток - москва от 7 суток </div><div class="advantages__info" style="display: flex; align-items: center; margin-bottom: 34px;"><p style="font-weight: 300; font-size: 16px; line-height: 1.3; color: rgb(224, 222, 252); margin-right: 45px; margin-bottom: 0px;" class="advantages__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. Выстраиваем оптимальную логистику учитывающую скорость доставки и транспортные затраты на всем маршруте следования.</p><a class="advantages__btn" style="background-image: url(&quot;img/btn-arrow.svg&quot;); background-repeat: no-repeat; background-position: left center; padding-left: 45px; display: inline-flex; font-weight: 700; font-size: 16px; line-height: 20px; text-transform: uppercase; color: rgb(255, 255, 255); align-items: center;">Расчитать
+доставку</a></div><div class="advantages__list" style="display: inline-flex; width: 100%;"><div class="advantages__item" style="margin-right: 9px; width: 25%; background: linear-gradient(53.91deg, rgb(16, 13, 67) 19.96%, rgba(16, 13, 67, 0.62) 75.16%); height: 195px; display: inline-flex; align-items: center; justify-content: flex-start; flex-direction: column; text-align: center; padding-top: 47px;"><div class="advantages__icon-w" style="margin-bottom: 34px;"><img src="img/advantages-1.svg"></div><div class="advantages__item-txt" style="font-size: 13px; line-height: 1.2; text-align: center; color: rgb(224, 222, 252); height: 48px; display: inline-flex; justify-content: center; align-items: center;">Быстрый <br>
+просчет</div></div><div class="advantages__item" style="margin-right: 9px; width: 25%; background: linear-gradient(53.91deg, rgb(16, 13, 67) 19.96%, rgba(16, 13, 67, 0.62) 75.16%); height: 195px; display: inline-flex; align-items: center; justify-content: flex-start; flex-direction: column; text-align: center; padding-top: 47px;"><div class="advantages__icon-w" style="margin-bottom: 34px;"><img src="img/advantages-2.svg"></div><div class="advantages__item-txt" style="font-size: 13px; line-height: 1.2; text-align: center; color: rgb(224, 222, 252); height: 48px; display: inline-flex; justify-content: center; align-items: center;">Подбор<br>
+оптимального <br>
+маршрута</div></div><div class="advantages__item" style="margin-right: 9px; width: 25%; background: linear-gradient(53.91deg, rgb(16, 13, 67) 19.96%, rgba(16, 13, 67, 0.62) 75.16%); height: 195px; display: inline-flex; align-items: center; justify-content: flex-start; flex-direction: column; text-align: center; padding-top: 47px;"><div class="advantages__icon-w" style="margin-bottom: 34px;"><img src="img/advantages-3.svg"></div><div class="advantages__item-txt" style="font-size: 13px; line-height: 1.2; text-align: center; color: rgb(224, 222, 252); height: 48px; display: inline-flex; justify-content: center; align-items: center;">Гибкая <br>
+цена</div></div><div class="advantages__item" style="margin-right: 9px; width: 25%; background: linear-gradient(53.91deg, rgb(16, 13, 67) 19.96%, rgba(16, 13, 67, 0.62) 75.16%); height: 195px; display: inline-flex; align-items: center; justify-content: flex-start; flex-direction: column; text-align: center; padding-top: 47px;"><div class="advantages__icon-w" style="margin-bottom: 34px;"><img src="img/advantages-4.svg"></div><div class="advantages__item-txt" style="font-size: 13px; line-height: 1.2; text-align: center; color: rgb(224, 222, 252); height: 48px; display: inline-flex; justify-content: center; align-items: center;">Более 10 лет<br>
+успешной <br>
+работы</div></div></div></div></div></div></div><div class="services" style="padding-top: 62px; padding-bottom: 20px; background-image: url(&quot;img/services-texture.svg&quot;); background-repeat: no-repeat; background-position: center top;"><div class="contain"><div class="services__heading-w" style="display: flex; align-items: center;"><div class="services__heading" style="font-weight: 700; font-size: 44px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: inline-block; margin-right: 43px;">НАШИ УСЛУГИ</div><div class="services__subheading" style="display: inline-block;">Комплексный подход к перевозке и таможенному оформлению груза</div></div><div class="services__list" style="margin-top: 69px; margin-left: -50px; margin-right: -50px; display: flex; flex-wrap: wrap;"><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-1.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Морские перевозки</a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-2.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Ж/д перевозки</a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-2.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Автомобили из Южной <br>
+Кореи под заказ</a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-6.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Таможенное оформление </a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-5.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Автомобильные перевозки</a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div><div class="services__item" style="padding-left: 50px; padding-right: 50px; width: 33.3333%; display: flex; flex-direction: column; align-items: center; margin-bottom: 64px;"><div class="services__img-w" style="display: flex; align-items: center; justify-content: center; margin-bottom: 29px; height: 180px;"><img src="img/services-4.svg"></div><a class="services__title" style="font-weight: 700; font-size: 20px; line-height: 1.2; text-transform: uppercase; color: rgb(23, 19, 88); display: flex; text-align: center; margin-bottom: 9px; height: 58px; align-items: center;">Сборные грузы</a><p style="font-weight: 300; font-size: 16px; line-height: 1.3; text-align: center; color: rgb(76, 75, 102);" class="services__text">Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. </p><a class="services__btn" style="margin-top: 17px; display: inline-flex; align-items: center; justify-content: center; height: 55px; padding-left: 33px; padding-right: 33px; background: rgb(188, 32, 36); border-radius: 12px; font-weight: 700; font-size: 14px;text-transform: uppercase; color: rgb(255, 255, 255);">Подробнее</a></div></div></div></div></div>
+
+
+
+
+  <div class="dop-info">
+    <div class="contain">
+      <p>Сохранения</p>
+      <p>Обновить страницу <br>
+        кликнуть на любой блок верстки<br>
+        Нажать alt + f3<br>
+        Выбрать последнее сохраниение или другое<br>
+
+
+      </p>
+      <p>font-family: 'Verdana', sans-serif;</p>
+      <p>background-size: cover;</p>
+      <p>
+        display: inline-flex; <br>
+        width: calc(100% - 5px);
+      </p>
+      <p>        
+      font-weight: 500;</p>
+      <p>   
+        background-color: #000; <br> 
+        background-color: rgba(#fff, 0.77);  <br>    
+        flex-grow: 1;
+        flex: none;
+      </p>   
+      <p>
+        border-bottom: 1px solid #ccc; - Нижний <br>
+        border-top: 1px solid #ccc; - Верхний <br>
+        border-left: 1px solid #ccc; - Левый <br>
+        border-right: 1px solid #ccc; - Правый <br>
+        border: none; - Нету <br>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="form form-my">
+      <!--label>
+       Class Name <br>
+       <input type="text" class="class-name">
+     </label-->
+     <label>
+       CSS Styless <br>
+       <textarea class="styless"></textarea>
+       <!--input type="text" class="styless"-->
+     </label>
+     <label>
+       Add new Text + Enter <br>
+       <textarea class="text_val_add"></textarea>       
+     </label>
+     <!--span class="butt_add_text">OK</span-->
+
+     <br>
+     <label>
+      Placeholder <br>
+      <input type="text" class="placeholder">
+    </label>
+
+
+
+    <label>
+     <b>Width</b> <br>
+     <input type="text" class="width">
+   </label>
+   <label>
+     <b>Height</b> <br>
+     <input type="text" class="height">
+   </label>
+
+   <label>
+     <b>Calc</b> <br>
+     <input type="text" class="widthCalc" value="calc(100% / 3 - 10px)">
+   </label>
+
+
+
+
+   <label>
+     <b>Font-size</b>
+     <input type="text" class="fSize" placeholder="13px">
+   </label>
+   <label>
+     <b>Line-height</b>
+     <input type="text" class="line_height" placeholder="13px">
+   </label> 
+   <label>
+     <b>Font-weight</b>
+     <input type="text" class="fWeight" placeholder="600">
+   </label>
+
+
+   <label>
+     Color <br>
+     <input type="text" class="color">
+   </label>
+   <label>
+     Background-color <br>
+     <input type="text" class="bgColor">
+   </label>
+
+
+
+
+   <br>
+   <span class="group group-ma-pa group-margin">  
+    <span class="ma-pa-span ma-pa-hor">
+      <input type="text" class="margin_top" placeholder="">
+    </span><!--ma-pa-top-->
+    <span class="ma-pa-span ma-pa-vert">        
+      <input type="text" class="margin_left" placeholder="">
+      <input type="text" class="margin_right" placeholder="">
+    </span><!--ma-pa-span-->
+    <span class="ma-pa-span ma-pa-hor">    
+      <input type="text" class="margin_bottom" placeholder="">
+    </span>
+  </span>    
+  <span class="ma-span">
+   <input type="checkbox" class="ma"> 
+ </span>
+ <span class="group group-ma-pa group-padding">  
+  <span class="ma-pa-span ma-pa-hor">
+    <input type="text" class="padding_top" placeholder="">
+  </span><!--ma-pa-top-->
+  <span class="ma-pa-span ma-pa-vert">        
+    <input type="text" class="padding_left" placeholder="">
+    <input type="text" class="padding_right" placeholder="">
+  </span><!--ma-pa-span-->
+  <span class="ma-pa-span ma-pa-hor">
+    <input type="text" class="padding_bottom" placeholder="">
+  </span>
+</span>
+<span class="group group-position">
+ <span>Position</span>
+
+ <label>
+   <input class="posre" type="radio" name="change_status_select" value="1"/>Relat
+ </label>
+ <label>
+   <input class="posa" type="radio" name="change_status_select" value="2"/>Absol
+ </label>
+ <label>
+   <input class="possta" type="radio" name="change_status_select" value="3"/>Static
+ </label>
+</span> 
+<span class="group group-ma-pa group-position-size">  
+  <span class="ma-pa-span ma-pa-hor">
+    <input type="text" class="position_top" placeholder="">
+  </span><!--ma-pa-top-->
+  <span class="ma-pa-span ma-pa-vert">        
+    <input type="text" class="position_left" placeholder="">
+    <input type="text" class="position_right" placeholder="">
+  </span><!--ma-pa-span-->
+  <span class="ma-pa-span ma-pa-hor">    
+    <input type="text" class="position_bottom" placeholder="">
+  </span>
+</span>
+
+<span class="group group-text-align">
+  <span>Text-align:</span>
+  <label>
+    <input class="tal" type="radio" name="change_status_select12" value="1"/>Left
+  </label>
+  <label>
+   <input class="tac" type="radio" name="change_status_select12" value="2"/>Centr
+ </label>     
+ <label for="">
+   <input class="tar" type="radio" name="change_status_select12" value="2"/>Right
+ </label>     
+</span>
+
+<span class="bordur">
+  <label>
+    Border-width
+    <input type="text" class="bordwidth">
+  </label>
+  <label>
+    Border-color
+    <input type="text" class="bordcol">
+  </label>  
+</span>  
+<span class="bordside tools tools2">
+  <label>
+    <input class="bordaround" type="radio" name="change_status_select" value="1"/>
+    <span>A</span>
+  </label>  
+  <label>
+    <input class="bordleft" type="radio" name="change_status_select" value="2"/>
+    <span ><svg class="rot-90" viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+    <input class="bordtop" type="radio" name="change_status_select" value="3"/>
+    <span><svg viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+    <input class="bordbot" type="radio" name="change_status_select" value="4"/>
+    <span >      
+      <svg class="rot180" viewBox="0 0 16 16" id="align_content_start">
+        <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+      </svg>
+    </span>
+  </label>
+  <label>
+    <input class="bordright" type="radio" name="change_status_select" value="5"/>
+    <span > <svg class="rot90" viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+</span>
+<label>
+  <input type="checkbox" class="bornone"> 
+  <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Border: none</span>
+</label>
+
+<br>
+<span class="group group-overflow">
+  <span>Overflow</span>
+  <label>
+   <input class="overflow1" type="radio" name="change_status_select" value="1"/>Hidden
+ </label>
+ <label>
+   <input class="overflow2" type="radio" name="change_status_select" value="2"/>Visible
+ </label>     
+</span>          
+
+
+
+<label>
+ Z-index <br>
+ <input type="text" class="z_index" placeholder="">
+</label>
+
+<label>
+ Opacity <br>
+ <input type="text" class="opacity" placeholder="">
+</label>
+
+<span class="group group-bgpos">
+ <span class="group-title"><b>BG-POS</b></span>
+ <label>
+   <input class="ltop" type="radio" name="change_status_select" value="1">
+   <span class="bgpos__butt">
+    <span class="bgpos__butt-sq bgpos__butt-sq--lt"></span>
+  </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="topce" type="radio" name="change_status_select" value="2">
+ <span class="bgpos__butt">
+  <span class="bgpos__butt-sq bgpos__butt-sq--ct"></span>
+</span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ritop" type="radio" name="change_status_select" value="3">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rt"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ricentr" type="radio" name="change_status_select" value="4">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rc"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ribot" type="radio" name="change_status_select" value="5">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rb"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="botcentr" type="radio" name="change_status_select" value="6">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--bc"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="lebot" type="radio" name="change_status_select" value="7">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--lb"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="lecentr" type="radio" name="change_status_select" value="8">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--lc"></span>
+ </span><!--bgpos__butt-->
+</label>
+</span>
+
+<label>
+ Min-height <br>
+ <input type="text" class="minheight">
+</label>
+
+<label>
+  Max-width px % <br>
+  <input type="text" class="maxwidth">
+</label>
+
+<span class="group group-text-align">
+  <span>Object-fit:</span>
+  <label>
+    <input class="objcov" type="radio" name="change_status_select12" value="1"/>Cover
+  </label>  
+</span>
+
+
+<span class="group group-float">
+ <span>Float</span>
+ <label>
+   <input class="float1" type="radio" name="change_status_select" value="1"/>Left
+ </label>
+ <label>
+   <input class="float3" type="radio" name="change_status_select" value="3"/>None
+ </label>
+ <label>
+   <input class="float2" type="radio" name="change_status_select" value="2"/>Right
+ </label>     
+</span>
+
+
+<label>
+  Value <br>
+  <input type="text" class="submit_value">
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="w-row"><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div></div><!--w-row-->
+
+
+<div class="left-tools">
+  <span class="copy-add">
+    <span class="copy">Copy</span>
+    <span class="parent">Parent</span>
+    <span class="add">Add</span>  
+    <span class="rw">rw</span>  
+  </span><!--copy-add-->
+  <span class="colss">
+    <span class="coll coll-1" title="alt + 1">1</span>
+    <span class="coll coll-2">2</span>
+    <span class="coll coll-3">3</span>
+    <span class="coll coll-4">4</span>
+    <span class="coll coll-6">6</span>  
+    <input type="text" class="norm" value="<br>">
+    <span class="coll coll-8" title="alt + 3">-w</span>
+    <span class="coll coll-7" title="alt + 2"><b>contain</b></span>
+    <span class="coll coll-b"><b>b</b></span>
+    <span class="coll coll-p"><b>p</b></span>
+    <span class="coll coll-w"><b>wrap</b></span> 
+    <span class="coll coll-aw"><b>a wrap</b></span> 
+    <!--input type="text" class="tag_name" placeholder="Имя тэга"-->
+  </span><!--colss-->
+  <div class="form form-my2">    
+    <div class="coluu-w">
+      <span class="coluu" id="coluu_2">
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_3">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_4">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_5">
+        5
+      </span>
+      <span class="coluu" id="coluu_6">
+        6
+      </span>
+      <span class="coluu" id="coluu_w">
+        W
+      </span>
+    </div>
+    <!--span class="classs">none</span><br-->
+      <span class="classs2">none</span>
+  <!--label>
+   Class Name <br>
+   <input type="text" class="class-name2">
+ </label>
+ <label>
+   Text <br>
+   <textarea class="text_val2"></textarea>  
+ </label>
+ <label>
+   CSS Styless <br>
+   <textarea class="styless2"></textarea>   
+ </label> 
+ <span class="butt2">OK</span-->
+ 
+
+
+ <span class="displ tools tools2">
+
+  <label>    
+    <input class="dblock" type="radio" name="change_status_select" value="1"/>
+    <span class="grayactttt">B</span>
+  </label>
+
+
+  <label>
+    <input class="dinlineblock" type="radio" name="change_status_select" value="3"/>
+    <span>IB</span>
+  </label>
+
+  <label>
+    <input class="dflex" type="radio" name="change_status_select" value="5"/>    
+    <span class="dflex-iconnnn">F</span>
+  </label>
+
+  <label>
+    <input class="iflex" type="radio" name="change_status_select" value="6"/>
+    <span>IF</span>
+  </label>
+
+  <label>    
+    <input class="dinline" type="radio" name="change_status_select" value="2"/>
+    <span>I</span>
+  </label>
+
+  <label class="ml10">
+    <input class="grow_none" type="radio" name="grow_1" value="1"/>
+    <span class="w50s">N</span>
+  </label>
+  <label>
+    <input class="grow1" type="radio" name="grow_1" value="1"/>
+    <span class="w50s">1</span>
+  </label>
+  <!--label>
+    <span>N</span>
+    <input class="dnone" type="radio" name="change_status_select" value="4"/>
+  </label--> 
+</span>
+
+<span class="group group-alignitems mtaa tools tools2">  
+  <label>
+    <input class="ai1" type="radio" name="change_status_select" value="1">
+    <span><svg viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+   <input class="ai2" type="radio" name="change_status_select" value="2">
+   <span><svg viewBox="0 0 16 16" id="align_content_center">
+    <path d="M4 1l4 4 4-4H4zm0 14l4-4 4 4H4zm10-8H2v2h12V7z"></path>
+  </svg></span>
+</label>
+<label>
+ <input class="ai3" type="radio" name="change_status_select" value="3">
+ <span><svg viewBox="0 0 16 16" id="align_content_end">
+  <path d="M9 1v6h3l-4 4-4-4h3V1h2zm5 14v-2H2v2h12z"></path>
+</svg></span>
+</label>
+
+
+
+
+
+<label class="ml10">
+  <input class="flwrap" type="radio" name="change_status_select12" value="1"/>
+  <span>W</span>
+</label> 
+<label>
+  <input class="flwrap2" type="radio" name="change_status_select12" value="2"/>
+  <span>NO</span>
+</label>   
+
+
+
+
+
+
+</span>
+
+<span class="group group-alignitems mtaa tools tools2">  
+  <label>
+    <input class="jc1" type="radio" name="change_status_select" value="1">
+    <span><svg viewBox="0 0 16 16" id="justify_start">
+      <path d="M2 4V2h6v2H2zm0 5V7h12v2H2zm0 3v2h6v-2H2z"></path>
+    </svg></span>
+  </label>
+  <label>
+   <input class="jc4" type="radio" name="change_status_select" value="2">
+   <span><svg viewBox="0 0 16 16" id="justify_center">
+    <path d="M5 2v2h6V2H5zM2 9V7h12v2H2zm3 5v-2h6v2H5z"></path>
+  </svg></span>
+</label>
+<label>
+ <input class="jc3" type="radio" name="change_status_select" value="3">
+ <span><svg viewBox="0 0 16 16" id="justify_end">
+  <path d="M8 2v2h6V2H8zM2 9V7h12v2H2zm6 5v-2h6v2H8z"></path>
+</svg></span>
+</label>
+<label>
+ <input class="jc2" type="radio" name="change_status_select" value="2">
+ <span class="sbetw"></span>
+</label>
+<label class="ml10">
+  <input class="fd_col" type="radio" name="fd_column" value="col"/>
+  <span>col</span>
+</label>  
+<label>
+  <input class="fd_row" type="radio" name="fd_column" value="row"/>
+  <span>row</span>
+</label> 
+</span>
+
+
+<label>
+  <span class="img">IMG</span>    
+  <input type="file" class="type_file">    
+</label>
+<span class="butospan obb_img" title="alt + O">O</span>
+<label>
+  <span class="bg-img">BG-IMG</span>
+  <input type="file" class="type_file2">
+</label>
+<label for="">
+  <span class="radius"></span>
+</label>
+<input type="text" class="radius_input">
+<label for="">
+  <span class="before">Before</span>
+</label>
+<span class="butospan link" title="alt + L">a</span>
+<span class="butospan span" title="alt + S">span</span>
+<label for="">
+  <span class="butospan but_form but_form_1">Form</span>
+  <span class="butospan but_form but_form_2">Form 2</span>
+  <span class="butospan but_text">Text</span>
+  <span class="butospan but_textarea">Area</span>    
+  <span class="butospan but_subm">Submit</span>    
+</label>
+
+
+
+<label for="">
+  <span class="butospan but_ul">ul</span>    
+  <span class="butospan but_li">li</span>
+  <span class="butospan but_dot">dot</span>
+</label>  
+  <!--label>
+   <input type="checkbox" class="mha"> 
+   <span style="display: inline-block; padding-top: 5px; padding-left: 5px;">Min-height: auto</span>
+ </label-->
+ <!--label>
+   <input type="checkbox" class="fsi"> 
+   <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Font-style: italic</span>
+ </label-->
+
+
+
+
+
+
+
+
+
+ <span class="butospan stroove">st id rem</span>
+ <span class="butospan copy-html">copy htm</span>
+</div>
+
+
+
+
+
+<div class="left-const">
+  <div class="const-elem-action" id="hedr"><img src="img-const/header.jpg" alt=""></div>
+  
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_50" id="contct"><img src="img-const/contact.png" alt=""></div>
+    <div class="const-elem-action const-elem-action_50" id="socs"><img src="img-const/socs.png" alt=""></div>
+  </div><!--g-50-->
+
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_50" id="btn"><img src="img-const/btn.png" alt=""></div>
+    <div class="const-elem-action const-elem-action_50" id="btno"><img src="img-const/btn-o.png" alt=""></div>
+  </div><!--g-50-->
+
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="it1"><img src="img-const/111.jpg" alt=""></div>
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="it2"><img src="img-const/222.jpg" alt=""></div>  
+  </div>
+
+  <div class="const-elem-action const-elem-action_v" id="it3"><img src="img-const/333.jpg" alt=""></div>
+
+  <div class="const-elem-action const-elem-action_v" id="bannr"><img src="img-const/bannr.jpg" alt=""></div>
+
+
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="tabss"><img src="img-const/tabss.jpg" alt=""></div>
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="barndss"><img src="img-const/barndss.jpg" alt=""></div>
+  </div>
+
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="elem1"><img src="img-const/it1.jpg" alt=""></div>
+    <div class="const-elem-action const-elem-action_v const-elem-action_50" id="elem2"><img src="img-const/it2.jpg" alt=""></div>
+  </div>
+
+  <div class="group-50">
+    <div class="const-elem-action const-elem-action_v2 const-elem-action_50" id="card"><img src="img-const/card.jpg" alt=""></div>
+    <div class="const-elem-action const-elem-action_v2 const-elem-action_50" id="vform"><img src="img-const/vform.jpg" alt=""></div>
+  </div> 
+
+  <div class="const-elem-action const-elem-action_v"  id="hform"><img src="img-const/hform.jpg" alt=""></div>
+  <div class="const-elem-action" id="taggss"><img src="img-const/taggss.jpg" alt=""></div>
+  <div class="const-elem-action const-elem-action_v"  id="neww"><img src="img-const/neww.jpg" alt=""></div>
+  
+  <div class="const-elem-action const-elem-action_v"  id="bredd"><img src="img-const/bredd.jpg" alt=""></div>
+  <div class="const-elem-action"  id="paginn"><img src="img-const/paginn.jpg" alt=""></div>
+
+
+</div><!--left-const-->
+
+
+</div><!--left-tools-->
+
+
+
+<div class="eye"></div>
+<div class="eye2"></div>
+<a href="#" class="save">save</a>
+<div class="top_pan">
+  <span class="colla coll-h1">h1</span>
+  <span class="colla coll-h2">h2</span>
+  <span class="colla coll-h3">h3</span>
+  <span class="colla coll-h4">h4</span>
+  <span class="colla coll-h5">h5</span>
+  <span class="colla coll-h6">LBL</span>
+  <span class="colla coll-bq">blockquote</span>
+
+  <span class="colla colla-i">  
+   <input type="text" class="class-name"> 
+ </span>
+
+
+ <span class="remove">X</span>
+ <span class="flora">
+  <span class="colla coll_table">Таблица</span>
+  <span class="colla coll_thead">Заголовок</span>
+  <span class="colla coll_tbody">Тело</span>
+  <span class="colla coll_tr">Ряд</span>
+  <span class="colla coll_td">Ячейка</span>
+</span>
+<textarea class="text_val_add_2"></textarea>
+<textarea class="styless_2"></textarea>
+</div><!--top_pan-->
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>  
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.textchange.min.js"></script>
+
+
+
+
+<script src="js/common1.js"></script>
+<!--Для адаптации-->
+<!-- <script src="js/common-resp.js"></script> -->
+
+</body>
+</html>
