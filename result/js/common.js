@@ -82,5 +82,28 @@ $('.calculate-form__col').click(function () {
 
 $(".input-phone").mask("+7 (999) 999-99-99");
 
+  $('.revslider__slider').slick({            
+    infinite: true,    
+    slidesToShow: 1,
+    speed: 550,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+    dots: false    
+  });
+
+$('.brands__slider').slick({            
+    infinite: true,    
+    slidesToShow: 6,
+    speed: 350,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    cssEase: 'linear',
+    dots: false    
+  });
+
+
 }); //ready
 
