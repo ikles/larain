@@ -1348,6 +1348,7 @@ body.touch .sub-sub-menu__list.open {
   margin-right: 45px;
   margin-bottom: 0px; }
 
+.chipest__btn,
 .advantages__btn {
   background-image: url("../img/btn-arrow.svg");
   background-repeat: no-repeat;
@@ -1365,13 +1366,20 @@ body.touch .sub-sub-menu__list.open {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 16px;
-  margin-right: 9px; }
+  margin-right: 9px;
+  min-height: 30px; }
+
+.chipest__btn {
+  margin-top: 49px; }
 
 .advantages__list {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 
 .advantages__item {
   width: 25%;

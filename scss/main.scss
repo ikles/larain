@@ -878,6 +878,8 @@ body {
   margin-bottom: 0px;
 }
 
+
+.chipest__btn,
 .advantages__btn {
   background-image: url("../img/btn-arrow.svg");
   background-repeat: no-repeat;
@@ -892,17 +894,24 @@ body {
   align-items: center;
   margin-top: 16px;
   margin-right: 9px;
+  min-height: 30px;
+}
+
+.chipest__btn {
+  margin-top: 49px;
 }
 
 .advantages__list {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  width: 100%;  
+  flex-wrap: nowrap;
 }
 
 .advantages__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
+  //width: calc(25% - 11px);
   width: 25%;
   background: linear-gradient(53.91deg, rgb(16, 13, 67) 19.96%, rgba(16, 13, 67, 0.62) 75.16%);
   
@@ -1371,7 +1380,7 @@ body {
   box-shadow: inset 0px 4px 22px rgba(0, 0, 0, 0.12);
   background: url("../img/vid.svg") $nr left 25px center;
   background-color: #BC2024;  
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 .revslider__slide-mask {
@@ -1721,7 +1730,7 @@ body {
   width: 513px;
   flex: 0 0 auto;  
   .revservices__row {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .revservices__item {
     height: 267px;
@@ -1731,7 +1740,7 @@ body {
     &:hover {
       height: 267px;
       -webkit-border-radius: none;
-              border-radius: none;
+      border-radius: none;
       .revservices__num {
         left: 13px;
       }
@@ -1749,7 +1758,7 @@ body {
     color: #FFF;
   }
   .revservices__num {
-  color: #464375;    
+    color: #464375;    
   }
 }
 
@@ -1817,12 +1826,12 @@ body {
   }
   .revslider__slider {
     position: relative;
-  z-index: 2;
+    z-index: 2;
   }
   .revslider__slide {
     background: rgba(255, 255, 255, 0.11);
-border: 3px solid #FFFFFF;
-border-radius: 6px;
+    border: 3px solid #FFFFFF;
+    border-radius: 6px;
   }
   .revslider__slide-content {
     color: #4C4B66;
@@ -1841,12 +1850,12 @@ border-radius: 6px;
 
 .wrevslider__heading {
   font-weight: 700;
-font-size: 32px;
-line-height: 121%;
-text-align: center;
-text-transform: uppercase;
-color: #4C4B66;
-margin-bottom: 31px;
+  font-size: 32px;
+  line-height: 121%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4C4B66;
+  margin-bottom: 31px;
 }
 
 
@@ -1885,7 +1894,7 @@ margin-bottom: 31px;
   max-width: 548px;
   width: 100%;
   padding: 98px 0 100px 0;  
-          flex: none;
+  flex: none;
   .footconts__btn {
     max-width: 381px;
   }
