@@ -6,85 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+ @@include('var/_styless.html')
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__bar">
-        <a href="#" class="contact-us">
-          <span class="contacts__title">
-            Связаться<br />
-            с нами
-          </span>
-          <span class="contact-us__icon-block"><span class="contact-us__icon"></span></span>
-        </a>
-        <div class="header__bar-line"></div>
-        <div class="socials">
-          <span class="contacts__title">Мы в соцсетях</span>
-          <div class="socials__list"><a href="#" class="socials__item _fb"></a><a href="#" class="socials__item _inst"></a><a href="#" class="socials__item _you"></a></div>
-        </div>
-      </div>
-      <div class="contain">
-        <div class="top__row">
-          <a href="#" class="logo">
-            <span class="logo__img-wrap"><img src="img/logo.svg" class="logo__img" /></span>
-            <span class="logo__slogan">
-              Перевозка грузов <br />
-              и таможенное<br />
-              оформление
-            </span>
-          </a>
-          <div class="col-mnu">
-            <div class="hidden-mnu">
-              <a href="#" class="toggle-mnu"><span></span></a>
-            </div>
-
-            <ul class="top__mnu">
-              <li class="top__mnu-li"><a href="#" class="top__mnu-link">Наши услуги</a></li>
-              <li class="top__mnu-li"><a href="#" class="top__mnu-link">О компании</a></li>
-              <li class="top__mnu-li"><a href="#" class="top__mnu-link">География</a></li>
-              <li class="top__mnu-li"><a href="#" class="top__mnu-link">Отзывы</a></li>
-              <li class="top__mnu-li"><a href="#" class="top__mnu-link">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="top__contacts">
-            <a href="#" class="top__phone">8 (800) 555-10-76</a><br />
-            <a href="#" class="top__mail">sales@lerain.ru</a>
-          </div>
-        </div>
-      </div>
-      <div class="banner">
-        <div class="contain">
-          <div class="banner__row">
-            <div class="banner__left">
-              <div class="banner__title">Перевозка грузов</div>
-              <div class="banner__subtitle">и таможенное оформление</div>
-              <p class="banner__text">
-                Доставляем грузы морским, ЖД и автотранспортом прямо до складов наших клиентов в любых городах России. Выстраиваем оптимальную логистику учитывающую скорость доставки и транспортные затраты на всем маршруте следования.
-              </p>
-              <a href="#" class="banner__btn btn-o">Получить расчет</a>
-            </div>
-            <div class="banner__right">          
-            </div>
-          </div>
-        </div>
-        <div class="banner__img-w">
-          <div class="banner__img-inn">
-            <img class="banner__img" src="img/main-banner-1.png" alt="">
-          </div>
-        </div>
-      </div>      
+      @@include('var/_header.html')     
     </header>
     <main class="main">
       <div class="calculate">
@@ -262,130 +189,8 @@
         </div>
       </div>
       <div class="revservices">
-        <div class="contain">
-          <div class="revservices__row">
-            <a href="#" class="revservices__item">
-              <span class="revservices__num">01</span>
-              <span class="revservices__img-w">
-                <img src="img/revservices-1.svg" alt="">
-              </span>
-              <span class="revservices__title">
-                Доставка <br />
-                сборного груза<br />
-                из Китая
-              </span>
-              <span class="revservices__subtitle">
-                Оптимальную логистику <br />
-                и скорость доставки
-              </span>
-            </a>
-            <a href="#" class="revservices__item">
-              <span class="revservices__num">02</span>
-              <span class="revservices__img-w">
-                <img src="img/revservices-2.svg" alt="">
-              </span>
-              <span class="revservices__title">
-                Перевозка<br />
-                автомобилей <br />
-                из Кореи
-              </span>
-              <span class="revservices__subtitle">
-                Выстраиваем оптимальную<br />
-                логистику и скорость доставки
-              </span>
-            </a>
-            <a href="#" class="revservices__item">
-              <span class="revservices__num">03</span>
-              <span class="revservices__img-w">
-                <img src="img/revservices-3.svg" alt="">
-              </span>
-              <span class="revservices__title">
-                Перевозка<br />
-                контейнеров <br />
-                из Китая и индии
-              </span>
-              <span class="revservices__subtitle">
-                Выстраиваем оптимальную<br />
-                логистику и скорость доставки
-              </span>
-            </a>
-            <a href="#" class="revservices__item">
-              <span class="revservices__num">04</span>
-              <span class="revservices__img-w">
-                <img src="img/revservices-4.svg" alt="">
-              </span>
-              <span class="revservices__title">
-                ЖД перевозки <br />
-                из Китая
-              </span>
-              <span class="revservices__subtitle">
-                Выстраиваем оптимальную<br />
-                логистику и скорость доставки
-              </span>
-            </a>
-            <a href="#" class="revservices__item">
-              <span class="revservices__num">05</span>
-              <span class="revservices__img-w">
-                <img src="img/revservices-5.svg" alt="">
-              </span>
-              <span class="revservices__title">
-                Таможенное <br />
-                оформление: <br />
-                ЭЦП/Брокер
-              </span>
-              <span class="revservices__subtitle">
-                Выстраиваем оптимальную<br />
-                логистику и скорость доставки
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="revslider">
-          <div class="revslider__contain contain">
-            <div class="revslider__heading">ОТЗЫВЫ КЛИЕНТОВ</div>
-
-            <div class="revslider__slider">
-              @@include('var/_revslider__slide.html')
-              @@include('var/_revslider__slide.html')
-              @@include('var/_revslider__slide.html')
-            </div>
-
-          </div>
-        </div>
-
-        <div class="brands">
-          <div class="brands__contain contain">
-            <div class="brands__heading">МЫ СОТРУДНИЧАЕМ ТОЛЬКО С ПРОВЕРЕННЫМИ КОМПАНИЯМИ</div>
-            <div class="brands__slider">
-              <div class="brands__slide">
-                <img src="img/brand-1.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-2.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-3.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-4.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-5.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-6.png" alt="">
-              </div>
-              <div class="brands__slide">
-                <img src="img/brand-7.png" alt="">
-              </div>              
-            </div>
-          </div>
-        </div>
-
-
+       @@include('var/_revservices.html')
       </div><!---->
-
     </main>
 @@include('var/_footer.html')
 </body>
