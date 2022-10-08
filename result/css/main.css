@@ -2325,6 +2325,72 @@ body.touch .sub-sub-menu__list.open {
     border-radius: 0px 0px 6px 6px;
     z-index: -1; }
 
+.photocars {
+  padding-top: 42px;
+  padding-bottom: 48px; }
+
+.photocars__heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4c4b66; }
+
+.photocars__row {
+  margin-top: 34px;
+  margin-left: -7px;
+  margin-right: -7px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.photocars__col {
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 25%; }
+
+.photocars__item {
+  background: #F5F3F3;
+  border-radius: 6px; }
+
+.photocars__img-w {
+  display: block;
+  border-radius: 6px;
+  height: 182px;
+  overflow: hidden; }
+
+.photocars__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.photocars__content {
+  padding: 12px 12px 30px; }
+
+.photocars__year {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #171358;
+  margin-bottom: 9px; }
+
+.photocars__name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 0.9;
+  color: #bc2024;
+  margin-bottom: 11px;
+  text-align: center; }
+
+.photocars__city {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  color: #4c4b66; }
+
 /******************/
 /******************/
 /******************/
