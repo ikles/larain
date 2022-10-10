@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
   <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2. Услуга</title>  
+  <title>2. Услуга</title>
   @@include('var/_styless.html')
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header header-2">
-      @@include('var/_header2.html')     
+      @@include('var/_header2.html')
     </header>
     <main class="main">
 
@@ -21,46 +23,98 @@
         </div>
       </div>
 
+      <div class="products">
+        <div class="contain">
+          <div class="products__heading">Автомобили привезенные для клиентов</div>
+          <div class="products__row">
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-1.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-2.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-3.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-4.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-1.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-2.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-3.png"
+              })
+            </div>
+            <div class="products__col">
+              @@include('var/_products__item.html',{
+                "img":"img/products-4.png"
+              })
+            </div>
+          </div>
+          <div class="products__more-w more-w">
+            <a href="#" class="products__more-btn more-btn btn">ПОКАЗАТЬ ЕЩЕ</a>
+          </div>
+        </div>
+      </div>
+
       <div class="wrevslider">
-       @@include('var/_wrevslider.html')
-     </div>
-     <div class="photocars">
-      <div class="contain">
-        <div class="photocars__heading">Фото доставленых машин</div>
-        <div class="photocars__row">
-          <div class="photocars__col">
-            @@include('var/_photocars__item.html')
-          </div>
-          <div class="photocars__col">
-            @@include('var/_photocars__item.html')
-          </div>
-          <div class="photocars__col">
-            @@include('var/_photocars__item.html')
-          </div>
-          <div class="photocars__col">
-            @@include('var/_photocars__item.html')
+        @@include('var/_wrevslider.html')
+      </div>
+      <div class="photocars">
+        <div class="contain">
+          <div class="photocars__heading">Фото доставленых машин</div>
+          <div class="photocars__row">
+            <div class="photocars__col">
+              @@include('var/_photocars__item.html')
+            </div>
+            <div class="photocars__col">
+              @@include('var/_photocars__item.html')
+            </div>
+            <div class="photocars__col">
+              @@include('var/_photocars__item.html')
+            </div>
+            <div class="photocars__col">
+              @@include('var/_photocars__item.html')
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="cquestions">
-      <div class="cquestions__contain contain">
-        <div class="cquestions__row">
-          <div class="cquestions__left">
-            @@include('var/_footconts__form.html')
-          </div>
-          <div class="cquestions__right">
-            <img src="img/cars.png" alt="">
+      <div class="cquestions">
+        <div class="cquestions__contain contain">
+          <div class="cquestions__row">
+            <div class="cquestions__left">
+              @@include('var/_footconts__form.html')
+            </div>
+            <div class="cquestions__right">
+              <img src="img/cars.png" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="revservices revservices--no-slider">
-     @@include('var/_revservices-no-slider.html')
-   </div><!---->
- </main>
- @@include('var/_footer.html')
-</body>
-</html>
+      <div class="revservices revservices--no-slider">
+        @@include('var/_revservices-no-slider.html')
+      </div>
+      <!---->
+    </main>
+    @@include('var/_footer.html')
+  </body>
 
+  </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. Отзывы</title>
+  @@include('var/_styless.html')
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header-o">
+      @@include('var/_header-o.html')
+    </header>
+    <main class="main">
+      <div class="revpage">
+        <div class="contain">
+          <div class="revpage__heading">ОТЗЫВЫ КЛИЕНТОВ</div>
+          <div class="revlist">
+            @@include('var/_revlist__col-no-photo.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+            @@include('var/_revlist__col.html')
+          </div>
+          <div class="revpage__more-w more-w">
+            <a href="#" class="revpage__more-btn more-btn btn">ПОКАЗАТЬ ЕЩЕ</a>
+          </div>
+
+          <form class="revform">
+            <div class="revform__title">Оставить комментарий</div>
+            <input class="revform__input _name" type="text" placeholder="Ваше имя">
+            <input class="revform__input _phone input-phone" type="text" placeholder="Телефон">
+            <textarea class="revform__textarea" placeholder="Ваш отзыв"></textarea>
+            <div class="revform__actions-w">
+              <button class="revform__btn">ОТПРАВИТЬ</button>
+              <div class="revform__actions">
+                <div class="revform__addfile">
+                  <span class="revform__plus"></span>Добавить фото</div>
+                  <label class="revform__label">
+                    <input type="checkbox">                    
+                    <span class="revform__label-span"></span>
+                    <span class="revform__label-span-txt">Согласие на обработку <a href="#" class="revform__link">персональных
+                    данных</a>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+
+        <!---->
+      </main>
+      @@include('var/_footer.html')
+    </body>
+
+    </html>
