@@ -403,7 +403,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   background: 
-  url('../img/banner-dots-bg.svg') top -252px center no-repeat,
+  url('../img/banner-dots-bg2.png') top -252px center no-repeat,
   url('../img/banner-figures-bg.svg') left 50px bottom -100px no-repeat;     
   &:before {
    content: "";
@@ -645,8 +645,7 @@ body {
 .banner {
   padding-top: 132px;
   padding-bottom: 236px;
-  position: relative;
-  
+  position: relative; 
   margin-top: auto;
 }
 
@@ -2417,6 +2416,79 @@ background: url("../img/input-bg-line.svg") $nr left 65px center,
   color: rgb(131, 133, 137);
   line-height: 1.2;
   text-decoration: underline;
+}
+
+.banner__img-w-5 {
+position: absolute;
+    right: -8px;
+    bottom: -4px;
+    }
+
+.header-5 {
+  &:before {
+    display: none;
+  }
+}
+
+.geo-2 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 827px;
+height: 582px;
+left: 0px;
+bottom: 100px;
+background: url("../img/ship-2.png") $nr 0px 0;
+  }  
+}
+
+.cquestions-5 {
+  background-image: none;
+  &:before {
+    display: none;
+  }
+}
+
+.cquestions__left-5 {
+  max-width: 640px;
+}
+
+.cquestions__right-5 {
+  padding-top: 0;  
+  img {
+    margin-top: -44px;
+  }
+  &:before {
+    width: 399px;
+    left: unset;
+    right: 10px;
+    transform: translate(-0%, -0%);
+  }
+}
+
+.header-6 {
+  background-image: none;
+  &:before {
+    background-image: url('../img/header-gradient-6.svg');
+  }
+}
+
+.banner__img-w-6 {
+    position: absolute;
+    right: -9px;
+    bottom: 0px;
+}
+
+.banner__img-inn-6 {
+ &:before {
+  width: 787px;
+  height: 787px;  
+          background-size: 787px;
+right: 228px;
+    bottom: -17px;
+ } 
 }
 
 /******************/

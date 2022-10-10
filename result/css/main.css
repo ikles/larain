@@ -858,7 +858,7 @@ body.touch .sub-sub-menu__list.open {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  background: url("../img/banner-dots-bg.svg") top -252px center no-repeat, url("../img/banner-figures-bg.svg") left 50px bottom -100px no-repeat; }
+  background: url("../img/banner-dots-bg2.png") top -252px center no-repeat, url("../img/banner-figures-bg.svg") left 50px bottom -100px no-repeat; }
   .header:before {
     content: "";
     display: block;
@@ -2823,6 +2823,63 @@ input[type="text"].revform__input {
   color: #838589;
   line-height: 1.2;
   text-decoration: underline; }
+
+.banner__img-w-5 {
+  position: absolute;
+  right: -8px;
+  bottom: -4px; }
+
+.header-5:before {
+  display: none; }
+
+.geo-2 {
+  position: relative; }
+  .geo-2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 827px;
+    height: 582px;
+    left: 0px;
+    bottom: 100px;
+    background: url("../img/ship-2.png") no-repeat 0px 0; }
+
+.cquestions-5 {
+  background-image: none; }
+  .cquestions-5:before {
+    display: none; }
+
+.cquestions__left-5 {
+  max-width: 640px; }
+
+.cquestions__right-5 {
+  padding-top: 0; }
+  .cquestions__right-5 img {
+    margin-top: -44px; }
+  .cquestions__right-5:before {
+    width: 399px;
+    left: unset;
+    right: 10px;
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+
+.header-6 {
+  background-image: none; }
+  .header-6:before {
+    background-image: url("../img/header-gradient-6.svg"); }
+
+.banner__img-w-6 {
+  position: absolute;
+  right: -9px;
+  bottom: 0px; }
+
+.banner__img-inn-6:before {
+  width: 787px;
+  height: 787px;
+  background-size: 787px;
+  right: 228px;
+  bottom: -17px; }
 
 /******************/
 /******************/
