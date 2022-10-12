@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-/************************************/
+  /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
@@ -34,11 +34,17 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-
 });*/
 
 /************************************/
 
+$(".choice__right").fancybox({
+  openEffect  : 'none',
+  closeEffect : 'none',
+  helpers : {
+    media : {}
+  }
+});
 
 
 function popup(openLink, windowEl, closeEl) {  
@@ -82,27 +88,39 @@ $('.calculate-form__col').click(function () {
 
 $(".input-phone").mask("+7 (999) 999-99-99");
 
-  $('.revslider__slider').slick({            
-    infinite: true,    
-    slidesToShow: 1,
-    speed: 550,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    cssEase: 'linear',
-    dots: false    
-  });
+$('.revslider__slider').slick({            
+  infinite: true,    
+  slidesToShow: 1,
+  speed: 550,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  cssEase: 'linear',
+  dots: false    
+});
 
 $('.brands__slider').slick({            
-    infinite: true,    
-    slidesToShow: 6,
-    speed: 350,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    cssEase: 'linear',
-    dots: false    
-  });
+  infinite: true,    
+  slidesToShow: 6,
+  speed: 350,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  cssEase: 'linear',
+  dots: false    
+});
+
+$('.brands-slider__slider').slick({            
+  infinite: true,    
+  slidesToShow: 7,
+  speed: 350,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  cssEase: 'linear',
+  dots: false    
+});
+
 
 
 }); //ready
