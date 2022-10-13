@@ -395,10 +395,9 @@ body {
 
 .header {
   position: relative;
-  //height: 100vh;
-  //max-height: 753px;
-  //min-height: 636px;
-  height: 751px;
+  height: 100vh;  
+  min-height: 636px;
+  max-height: 751px;
   display: flex;  
   flex-direction: column;
   overflow: hidden;
@@ -540,6 +539,8 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding-top: 30px;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -1707,7 +1708,8 @@ input[type="text"].footconts__input {
 .banner__img-w-2 {
   position: absolute;
   right: -9px;
-  bottom: -1px
+  bottom: -1px;
+  
 }
 
 .banner__img-inn-2 {
@@ -1738,6 +1740,8 @@ input[type="text"].footconts__input {
   height: auto;
   background: none;
   overflow: visible;
+  min-height: unset;
+  max-height: unset;
   &:before {
     display: none;
   }
@@ -3244,6 +3248,77 @@ margin-bottom: 0;
   color: rgb(255, 255, 255);
 }
 
+
+.banner__img-w-7 {
+  position: absolute;
+  right: -9px;
+  bottom: 0px;
+}
+
+.banner__img-inn-7 {
+ &:before {
+  width: 787px;
+  height: 787px;  
+  background-size: 787px;
+      right: 188px;
+    bottom: -137px;
+}   
+}
+
+.banner__img-w-8 {
+  position: absolute;
+  right: -9px;
+  bottom: 0px;
+}
+
+.banner__img-inn-8 {
+position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;      
+    right: 100px;
+    bottom: -160px;
+    width: 962px;
+    height: 962px;
+    background: url("../img/banner-rounds-bg.svg") $nr bottom 0px right 0;
+    z-index: -1;
+  }   
+}
+
+.banner__img-w-9 {
+  position: absolute;
+  right: -9px;
+  bottom: 0px;
+}
+
+.banner__img-inn-9 {
+position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;      
+    right: 220px;
+    bottom: -160px;
+    width: 962px;
+    height: 962px;
+    background: url("../img/banner-rounds-bg.svg") $nr bottom 0px right 0;
+    z-index: -1;
+  }   
+}
+
+.header-9:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    width: 1934px;
+    height: 752px;
+    background: url(../img/header-gradient.svg) no-repeat 0px 0;
+    z-index: -1;
+}
+
 /******************/
 /******************/
 /******************/
@@ -3257,7 +3332,7 @@ margin-bottom: 0;
 
 body {  
   &.active {
-    background: url("../img/1920.jpg") no-repeat top 14px center;
+    background: url("../img/1920.jpg") no-repeat top 0px center;
     .wrapper {
       opacity: 0.4;
     } 
