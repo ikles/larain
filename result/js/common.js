@@ -1,20 +1,18 @@
 jQuery(document).ready(function( $ ) {
 
-  $(".toggle-mnu").click(function() {
-    $(this).toggleClass("on");
-    $(".top-mnu").slideToggle();
-    return false;
+ $('.toggle-mnu').click(function (e) {
+    e.preventDefault();
+    $('.top__mnu').addClass('open');
+    $('.overlay').fadeIn();
   });
 
-  $('body').click(function () {
-    if( $(".toggle-mnu").hasClass("on") ){
-      $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
-    }
+  $('.overlay, .open-mnu-close').click(function () {    
+    $('.top__mnu').removeClass('open');
+    $('.overlay').fadeOut();
   });
 
 
-  $(".top-mnu").click(function (e) {
+  $(".top__mnu").click(function (e) {
     e.stopPropagation();
   });
 

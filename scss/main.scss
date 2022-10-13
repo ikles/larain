@@ -135,6 +135,9 @@ body {
 
 .lcpadding {
   padding-left: calc((100% - 1280px)/2);    
+  @media only screen and (max-width : 1570px) {
+    padding-left: calc((100% - 1170px)/2);
+  }
   @media only screen and (max-width : 1199px) {
     padding-left: calc((100% - 970px)/2);
   }
@@ -149,6 +152,28 @@ body {
   }
   @media only screen and (max-width : 570px) {
     padding-left: 15px;
+  }
+}
+
+.rcpadding {  
+  padding-right: calc((100% - 1280px)/2);
+  @media (max-width : 1570px) {
+    padding-right: calc((100% - 1170px)/2);
+  }
+  @media only screen and (max-width : 1199px) {    
+    padding-right: calc((100% - 970px)/2);
+  }
+  @media only screen and (max-width : 991px) {    
+    padding-right: calc((100% - 750px)/2);
+  }
+  @media only screen and (max-width : 767px) {    
+    padding-right: calc((100% - 600px)/2);
+  }
+  @media only screen and (max-width : 640px) {    
+    padding-right: calc((100% - 530px)/2);
+  }
+  @media only screen and (max-width : 570px) {    
+    padding-right: 15px;
   }
 }
 
@@ -177,24 +202,7 @@ body {
   }
 }
 
-.rcpadding {  
-  padding-right: calc((100% - 1280px)/2);
-  @media only screen and (max-width : 1199px) {    
-    padding-right: calc((100% - 970px)/2);
-  }
-  @media only screen and (max-width : 991px) {    
-    padding-right: calc((100% - 750px)/2);
-  }
-  @media only screen and (max-width : 767px) {    
-    padding-right: calc((100% - 600px)/2);
-  }
-  @media only screen and (max-width : 640px) {    
-    padding-right: calc((100% - 530px)/2);
-  }
-  @media only screen and (max-width : 570px) {    
-    padding-right: 15px;
-  }
-}
+
 
 /*modal*/
 
@@ -250,148 +258,7 @@ body {
 /*end modal*/
 
 
-/*top menu mnu*/
 
-.menu__list {
-  > li {
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-  li {
-    position: relative;
-  }
-  a.parent {
-    margin-right: 25px;
-  }
-}
-.menu__list {
-  display: flex;  
-  
-}
-.menu__link {
-  display: block;
-  height: 20px;
-}
-.sub-menu__list {
-  position: absolute;
-  top: 15px;
-  padding-top: 5px;
-  left: 0;  
-  display: none;
-  li {
-    padding: 10px;
-  }
-  > li {
-    background-color: #000; 
-  }
-}
-
-.sub-menu__link {
-  color: #fff;
-}
-.sub-sub-menu__list {
-  left: 100%;
-  top: 0;
-  position: absolute;
-  display: none;  
-  > li {
-    background-color: #ccc;
-    
-  }
-}
-.sub-sub-menu__link {}
-
-.menu__arrow {}
-.menu-arrow {
-  display: none;
-  width: 0;
-  height: 0;  
-  border-top: 10px solid #000;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  position: absolute;
-  right: 0;
-  top: calc(50% - 5px);
-  &.active {
-    transform: rotate(180deg);
-  }
-}
-
-.sub-menu__arrow {
-  border-top: 10px solid transparent;
-  border-left: 10px solid #fff;
-  border-right: none;
-  border-bottom: 10px solid transparent;
-}
-
-body {
-  &.mouse {
-    .menu__list {      
-      > li:hover {
-        .sub-menu__list {
-          display: block;
-        }    
-      }
-    }
-    .sub-menu__list {
-      > li {      
-        &:hover {
-          .sub-sub-menu__list {
-            display: block;
-          }      
-        }
-      }
-    }
-  }
-  &.touch {
-    .menu-arrow {
-      display: block;
-    }
-    .sub-menu__list.open {
-      display: block;
-    }
-    .sub-sub-menu__list.open {
-      display: block;
-    }
-  }
-}
-
-@media (max-width : 767px) {
-  .menu__list {
-    display: block;
-  }
-  .sub-menu__list {
-    position: static;
-  }
-  .sub-sub-menu__list {
-    position: static;
-  }
-  .sub-menu__arrow {
-    border-top: 10px solid #fff;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;  
-  }
-  .menu-arrow {
-    top: 0px;
-    right: 5px;
-  }
-  .sub-menu__list,
-  .sub-sub-menu__list {
-    display: block;
-    max-height: 0; 
-    overflow: hidden; 
-    transition: max-height 0.4s linear;          
-    &.open {    
-      max-height: 300px;
-    }
-
-  }
-
-
-}
-
-/*end top menu mnu*/
 
 .header {
   position: relative;
@@ -531,25 +398,42 @@ body {
 }
 
 
-
+.top {
+  position: relative;
+  z-index: 4;
+}
 
 .top__row {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding-top: 30px;
-  padding-bottom: 20px;
-  position: relative;
-  z-index: 2;
+  padding-bottom: 20px;  
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 64px;
   &:hover {
     text-decoration: none;
   }
+}
+
+.open-mnu-close {
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #343344;
+    opacity: 0.6;
+    z-index: 4;
+    display: none;
 }
 
 .logo__img-wrap {
@@ -609,13 +493,13 @@ body {
 .top__contacts {
   margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-start;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+           flex-direction: column; 
 }
 
 .top__phone {
-  display: inline-flex;
+  display: block;
   font-family: 'Helvetica';
   font-size: 22px;
   text-transform: uppercase;
@@ -632,7 +516,7 @@ body {
 }
 
 .top__mail {
-  display: inline-block;
+  display: block;
   margin-top: 8px;
   font-size: 13px;
   text-transform: uppercase;
@@ -1630,13 +1514,14 @@ input[type="text"].footconts__input {
   display: flex;
   align-items: center;
   margin-top: 44px;
-  
+
+          justify-content: space-between;
 }
 
 .footer__logo {
   display: inline-flex;
   width: 210px;
-  margin-right: 58px;  
+  
   flex: none;
 }
 
@@ -1667,7 +1552,7 @@ input[type="text"].footconts__input {
   background: url("../img/phone-red.svg") $nr left center;
   padding-left: 45px;
   min-height: 35px;  
-  align-items: center;
+  display: block;
   * {
     color: #FFF;
     background: none;
@@ -1675,7 +1560,7 @@ input[type="text"].footconts__input {
   }
   .top__phone {}
   .top__mail {
-    font-weight: 400;
+    font-weight: 400;    
   }
 }
 
@@ -2380,6 +2265,7 @@ input[type="text"].revform__input {
   padding: 26px 30px;
   color: rgb(131, 133, 137);
   font-size: 16px;
+  background: none;
 }
 
 .revform__actions-w {
@@ -2432,6 +2318,7 @@ input[type="text"].revform__input {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 13px;
+          flex: none;
 }
 
 .revform__label {
