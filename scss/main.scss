@@ -1047,6 +1047,7 @@ body {
   text-transform: uppercase;
   color: rgb(23, 19, 88);
   margin-bottom: 39px;
+  letter-spacing: -0.5px;
 }
 
 .advants__desc {
@@ -1102,10 +1103,10 @@ body {
 
 .geo {
   padding-top: 79px;
-  background:
-  url("../img/map1.svg") $nr -9px -13px,
+  background:  
+  url("../img/map1.png") $nr center -9px,
   url("../img/geo-bg.png") $nr top center;
-  background-color: rgb(29, 24, 104);
+  background-color: rgb(29, 24, 104) !important;
   height: 640px;
   overflow: hidden;
 }

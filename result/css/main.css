@@ -1550,7 +1550,8 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   color: #171358;
-  margin-bottom: 39px; }
+  margin-bottom: 39px;
+  letter-spacing: -0.5px; }
 
 .advants__desc {
   font-size: 16px;
@@ -1606,8 +1607,8 @@ body {
 
 .geo {
   padding-top: 79px;
-  background: url("../img/map1.svg") no-repeat -9px -13px, url("../img/geo-bg.png") no-repeat top center;
-  background-color: #1d1868;
+  background: url("../img/map1.png") no-repeat center -9px, url("../img/geo-bg.png") no-repeat top center;
+  background-color: #1d1868 !important;
   height: 640px;
   overflow: hidden; }
 
@@ -3696,7 +3697,26 @@ body.active {
   .footconts {
     padding-top: 40px;
     padding-right: 40px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+  .services__list:before {
+    background-position: right top;
+    width: 1100px; }
+  .products__img-w {
+    text-align: center; }
+    .products__img-w img {
+      max-width: calc(100% - 10px); }
+  .products__opt {
+    padding-left: 30px;
+    background-position: left 8px center; }
+  .schwork__form-w {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; }
+  .advcars__text {
+    font-size: 15px; }
+    .advcars__text br {
+      display: none; } }
 
 @media (max-width: 1450px) {
   .header-o .header__bar {
@@ -3705,6 +3725,23 @@ body.active {
     display: none; }
   .header__bar {
     display: none; } }
+
+@media (max-width: 1366px) {
+  .geo {
+    background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px, url("../img/geo-bg.png") no-repeat top center;
+    background-size: 100% !important;
+    height: auto;
+    padding-bottom: calc(100vw / 3); }
+  .revslider .slick-arrow {
+    top: -67px; }
+  .revslider .slick-prev {
+    right: 50px;
+    left: auto; }
+  .revslider .slick-next {
+    right: 0px; }
+  .brands__contain {
+    padding-right: 80px;
+    padding-left: 80px; } }
 
 @media only screen and (max-width: 1199px) {
   .contain {
@@ -3834,7 +3871,96 @@ body.active {
       width: 60%; }
   .banner-2 {
     padding-bottom: 40px;
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .advantages {
+    background-image: none; }
+  .services__item:nth-child(4):after {
+    top: 36px; }
+  .services__item:nth-child(5):after {
+    top: 36px; }
+  .advants__heading {
+    margin-bottom: 19px; }
+    .advants__heading br {
+      display: none; }
+  .advants__row {
+    margin: 0 -10px;
+    margin-top: 39px; }
+  .advants__col {
+    padding: 0 10px; }
+  .geo__map-w {
+    width: calc(100% - 20px);
+    -webkit-transform: translate(0px, 0%);
+        -ms-transform: translate(0px, 0%);
+            transform: translate(0px, 0%); }
+    .geo__map-w img {
+      max-width: 100%; }
+  .revservices {
+    background-image: none; }
+  .chipest__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .chipest__right {
+    padding-left: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 30px;
+    width: 100%;
+    padding-top: 0;
+    margin-left: 0; }
+  .chipest {
+    padding: 60px 0;
+    background: #171358; }
+  .chipest__left {
+    width: 100%; }
+  .products__heading {
+    font-size: 35px; }
+  .products__col {
+    width: 33.333%;
+    padding: 0 5px;
+    margin-bottom: 10px; }
+  .products__row {
+    margin: 0 -5px;
+    margin-bottom: 8px; }
+  .schwork__item:nth-child(5):after, .schwork__item:nth-child(4):after {
+    top: 46px; }
+  .schwork__item:nth-child(5):after,
+  .schwork__item:nth-child(2):after {
+    right: -32px; }
+  .choice__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .choice__left {
+    margin-right: 0;
+    margin-bottom: 30px; }
+  .advcars__item {
+    height: auto;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    padding: 20px 10px; }
+  .advcars__img-w {
+    height: 87px;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .advcars__content {
+    margin-left: 0;
+    text-align: center; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
@@ -3888,7 +4014,89 @@ body.active {
   .banner__img-inn-6:before {
     bottom: -186px; }
   .banner__img-inn-8:before {
-    bottom: -360px; } }
+    bottom: -360px; }
+  .calculate {
+    height: auto;
+    padding: 40px 0; }
+  .calculate-form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .calculate-form__col {
+    width: 100%;
+    border: 1px solid #2D2785; }
+  .calculate-form__arrows {
+    display: none; }
+  .services__list:before {
+    background: none; }
+  .services__item {
+    width: 50%;
+    padding: 0 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .services__list {
+    margin: 69px -20px 0 -20px; }
+  .services__btn {
+    margin-top: auto; }
+  .services__text {
+    margin-bottom: 20px; }
+  .services__title {
+    font-size: 16px; }
+  .services__item:after {
+    display: none !important; }
+  .geo {
+    background: url("../img/map1.png") no-repeat calc(50% - 60px) 81px, url("../img/geo-bg.png") no-repeat top center; }
+  .revservices .revservices__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .revservices .revservices__item {
+    width: 50%;
+    border: 1px solid #141053; }
+    .revservices .revservices__item:last-child {
+      width: 100%; }
+  .products__opt {
+    font-size: 12px; }
+  .schwork__row:before {
+    background: none; }
+  .schwork__item-2:after,
+  .schwork__item:after {
+    display: none !important; }
+  .schwork__item {
+    margin-bottom: 56px;
+    padding: 0 10px; }
+  .schwork__item-2 {
+    padding-left: 0;
+    width: 33.333%;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    padding: 0 10px; }
+  .schwork__text-2 {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 35px; }
+  .schwork {
+    background: #281554; }
+  .schwork__heading-w,
+  .services__heading-w {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .schwork__heading,
+  .services__heading {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%; }
+  .schwork__row {
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -3995,7 +4203,75 @@ body.active {
     bottom: -330px;
     right: -410px; }
   .header-6 .banner-2 {
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+  .advantages {
+    padding: 40px 0; }
+    .advantages .advantages__item {
+      height: auto;
+      padding: 20px 5px; }
+  .advants,
+  .services {
+    padding: 40px 0; }
+  .advants__heading {
+    font-size: 24px; }
+  .advants__row {
+    margin-top: 22px; }
+  .advants__item {
+    height: auto;
+    padding: 20px 5px; }
+  .advants__title {
+    font-size: 24px; }
+  .advants__subtitle {
+    font-size: 14px; }
+  .advants__img-w {
+    height: 40px; }
+    .advants__img-w img {
+      max-height: 100%;
+      width: auto; }
+  .geo {
+    padding-top: 40px; }
+  .geo__heading {
+    font-size: 37px; }
+  .revslider__slide-row {
+    display: block; }
+  .revslider__slide-content {
+    margin-left: 0;
+    margin-top: 40px; }
+  .revslider__slide-img-w {
+    margin-left: auto;
+    margin-right: auto; }
+  .chipest__btn {
+    margin-top: 0; }
+  .products__col {
+    width: 50%; }
+  .products__heading {
+    margin-bottom: 25px;
+    font-size: 30px; }
+  .choice__left {
+    padding-top: 0; }
+  .schwork__item,
+  .schwork__item-2 {
+    width: 50%; }
+  .advcars__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: -5px; }
+  .advcars__col {
+    width: 50%;
+    padding: 0 5px; }
+    .advcars__col:last-child {
+      width: 100%; }
+    .advcars__col:not(:last-child) {
+      margin-bottom: 10px; }
+  .advcars {
+    padding-bottom: 40px; }
+  .choice,
+  .schwork,
+  .products,
+  .chipest {
+    padding: 40px 0; } }
 
 @media only screen and (max-width: 640px) {
   .contain {
@@ -4052,7 +4328,37 @@ body.active {
   .banner__img-w-6 {
     -webkit-transform: translate(130px, 10px);
         -ms-transform: translate(130px, 10px);
-            transform: translate(130px, 10px); } }
+            transform: translate(130px, 10px); }
+  .advantages__info {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .revslider__slide {
+    padding: 40px 30px; }
+  .revslider__heading {
+    text-align: left;
+    padding-right: 120px; }
+  .products__opt {
+    width: 100%; }
+    .products__opt:last-child {
+      margin-bottom: 0; }
+  .products__btn {
+    width: 100%;
+    max-width: 100%; }
+  .choice__right {
+    width: 100%;
+    height: auto; }
+    .choice__right .choice__img {
+      max-width: 100%;
+      height: auto; }
+  .choice__right:after {
+    bottom: 11px;
+    width: calc(100% - 20px);
+    background-size: 100% auto; }
+  .choice__right:before {
+    width: 40px;
+    height: 40px;
+    background-size: 40px; } }
 
 @media only screen and (max-width: 575px) {
   .contain {
@@ -4109,7 +4415,67 @@ body.active {
   .banner__img-w-9 {
     -webkit-transform: translate(200px, 0px);
         -ms-transform: translate(200px, 0px);
-            transform: translate(200px, 0px); } }
+            transform: translate(200px, 0px); }
+  .schwork__heading,
+  .services__heading {
+    font-size: 33px; }
+  .services__subheading {
+    line-height: 1.1;
+    font-size: 15px; }
+  .advants__heading {
+    font-size: 24px; }
+  .advants__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .advants__col {
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto; }
+    .advants__col:not(:last-child) {
+      margin-bottom: 10px; }
+  .brands__contain {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .brands__slider .slick-prev {
+    left: -40px; }
+  .brands__slider .slick-next {
+    right: -40px; }
+  .chipest__subtitle {
+    font-size: 16px; }
+  .products__heading {
+    margin-bottom: 20px; }
+  .products__price {
+    font-size: 20px; }
+  .choice__subheader {
+    line-height: 1.2;
+    margin-top: 10px;
+    font-size: 17px; }
+  .choice__text {
+    margin-top: 10px; }
+  .products__img-w {
+    height: 86px; }
+  .schwork__item, .schwork__item-2 {
+    width: 100%; }
+  .schwork__text {
+    font-size: 15px;
+    margin-top: 25px; }
+  .schwork__img-w {
+    width: 135px;
+    height: 135px; }
+    .schwork__img-w img {
+      max-height: 50px; }
+  .advcars__title {
+    line-height: 1.2; }
+  .advcars__heading,
+  .choice__header,
+  .products__heading,
+  .chipest__title,
+  .brands__heading,
+  .revslider__heading {
+    font-size: 24px;
+    line-height: 1.2; } }
 
 @media (max-width: 555px) {
   .footinfo {
@@ -4197,7 +4563,40 @@ body.active {
   .banner__img-w-9 {
     -webkit-transform: translate(200px, 120px);
         -ms-transform: translate(200px, 120px);
-            transform: translate(200px, 120px); } }
+            transform: translate(200px, 120px); }
+  .advantages .advantages__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .advantages .advantages__item {
+    width: calc(50% - 8px);
+    margin-bottom: 8px; }
+    .advantages .advantages__item:not(:last-child) {
+      margin-right: 0; }
+    .advantages .advantages__item:nth-child(2n-1) {
+      margin-right: 8px; }
+  .services__item {
+    width: 100%; }
+  .services__item {
+    margin-bottom: 0; }
+    .services__item:not(:last-child) {
+      margin-bottom: 21px; }
+  .geo {
+    background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px; }
+  .geo__heading {
+    font-size: 32px; }
+  .revservices .revservices__item {
+    width: 100%; }
+  .chipest__left .revservices__item {
+    width: 100%; }
+  .chipest__item {
+    width: 100%; }
+  .advcars__col {
+    width: 100%;
+    padding: 0; }
+  .advcars__row {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media only screen and (max-width: 375px) {
   .banner-advantages__list .advantages__icon-w {
@@ -4232,7 +4631,21 @@ body.active {
 
 @media only screen and (max-width: 360px) {
   .banner__title {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .geo {
+    background: url("../img/map1.png") no-repeat calc(50% - 60px) 101px; }
+  .revslider__slide {
+    padding: 30px 15px; }
+  .revslider__slide-title {
+    font-size: 21px; }
+  .revslider__slide-company {
+    font-size: 15px;
+    margin-bottom: 13px; }
+  .products__img-w {
+    height: 60px; }
+  .products__title {
+    font-size: 18px;
+    line-height: 1.2; } }
 
 @media only screen and (max-width: 320px) {
   body, body > * {

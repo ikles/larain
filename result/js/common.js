@@ -105,7 +105,34 @@ $('.brands__slider').slick({
   autoplay: false,
   autoplaySpeed: 4000,
   cssEase: 'linear',
-  dots: false    
+  dots: false,
+  responsive: [
+
+    {
+      breakpoint: 1367,
+      settings: {
+        slidesToShow: 4        
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ]  
 });
 
 $('.brands-slider__slider').slick({            
