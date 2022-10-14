@@ -2358,10 +2358,12 @@ input[type="text"].revform__input {
   text-decoration: underline;
 }
 
+@media (min-width : 1451px) {
 .banner__img-w-5 {
   position: absolute;
   right: -8px;
   bottom: -4px;
+}
 }
 
 .header-5 {
