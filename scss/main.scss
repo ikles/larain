@@ -1150,6 +1150,11 @@ body {
   url("../img/revslider-bg-r.svg") $nr right -8px top 708px;
   background-color: rgb(20, 16, 83);
   padding-bottom: 45px;
+  &--no-slider {
+    background: url("../img/revslider-bg-r.svg") $nr right -8px top 708px;
+    background-color: rgb(20, 16, 83);
+  }
+  
 }
 
 .revservices__row {
@@ -1884,6 +1889,8 @@ input[type="text"].footconts__input {
 .photocars {
   padding-top: 42px;
   padding-bottom: 48px;
+  position: relative;
+  z-index: 3;
 }
 
 
@@ -2914,8 +2921,7 @@ input[type="text"].revform__input {
 
 .contmap__left {
   width: 50%;  
-          flex-grow: 1;
-          margin-right: 24px;
+          flex-grow: 1;          
   padding: 33px 30px 10px 39px;
   background: rgba(255, 255, 255, 0.9);
   border: 3px solid #FFFFFF;
@@ -2944,6 +2950,7 @@ input[type="text"].revform__input {
   flex: 0 0 auto;
   height: 459px;
   overflow: hidden;
+  padding-left: 24px;
 }
 
 .conts__socials {
@@ -3013,7 +3020,8 @@ input[type="text"].revform__input {
 }
 
 .opt__text {
-  width: 80%;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.3;
@@ -3026,6 +3034,10 @@ input[type="text"].revform__input {
   justify-content: flex-end;
   display: flex;
   flex: none;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .opt__btn {
