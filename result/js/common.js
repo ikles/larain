@@ -17,6 +17,30 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+//levels menu
+let isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())}}
+
+let body = document.querySelector('body');
+
+
+if ( isMobile.any() ) {
+  body.classList.add('touch');
+  let arrow = document.querySelectorAll('.menu-arrow');
+  arrow.forEach(function (item) {
+    let thisLink = item.previousElementSibling;
+    let subMenu = item.nextElementSibling;
+    let thisArrow = item;
+
+    thisLink.classList.add('parent');
+    item.addEventListener('click', function () {      
+      subMenu.classList.toggle('open');
+      thisArrow.classList.toggle('active');
+    });
+  });
+}
+else {
+  body.classList.add('mouse')
+}
 
 
   /************************************/
@@ -43,6 +67,20 @@ $(".choice__right").fancybox({
     media : {}
   }
 });
+
+  $('.photocars__img-w').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 
 
 function popup(openLink, windowEl, closeEl) {  
