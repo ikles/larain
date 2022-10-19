@@ -172,6 +172,7 @@
     height: 375px;    
             background-size: 355px;
   }
+
 }//1366
 
 @media only screen and (max-width : 1199px) {
@@ -1457,6 +1458,17 @@ h2,
 .get__left {
   padding: 20px;
 }
+
+.modal-form__block {
+  max-width: calc(100% - 30px);
+}
+
+.popform {
+  padding: 55px 20px 30px 20px;
+}
+  .popform__title {
+   font-size: 24px; 
+  }
 }//480
 
 @media only screen and (max-width : 375px) {

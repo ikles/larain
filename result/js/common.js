@@ -104,8 +104,7 @@ function popup(openLink, windowEl, closeEl) {
   
 }
 
-popup('.link2', '.modal-overlay_2', '.modal-close_2');
-popup('.link', '.modal-overlay_1', '.modal-close_1');
+popup('.banner__btn', '.modal-overlay_1', '.modal-close_1');
 
 
 $('a[href*=\\#]:not([href=\\#])').click(function () {
