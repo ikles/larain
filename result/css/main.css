@@ -1611,7 +1611,7 @@ h1 {
 
 .geo {
   padding-top: 79px;
-  background: url("../img/map1.png") no-repeat center -9px, url("../img/geo-bg.png") no-repeat top center;
+  background: url("../img/map3.png") no-repeat center -159px, url("../img/geo-bg.png") no-repeat top center;
   background-color: #1d1868 !important;
   height: 640px;
   overflow: hidden; }
@@ -3978,7 +3978,7 @@ input[type="text"].popform__input-text {
 
 @media (max-width: 1366px) {
   .geo {
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px, url("../img/geo-bg.png") no-repeat top center;
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) -39px, url("../img/geo-bg.png") no-repeat top center;
     background-size: 100% !important;
     height: auto;
     padding-bottom: calc(100vw / 3); }
@@ -4144,6 +4144,9 @@ input[type="text"].popform__input-text {
     margin-top: 39px; }
   .advants__col {
     padding: 0 10px; }
+  .geo {
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 1px, url("../img/geo-bg.png") no-repeat top center;
+    background-size: 100% !important; }
   .geo__map-w {
     width: calc(100% - 20px);
     -webkit-transform: translate(0px, 0%);
@@ -4327,7 +4330,7 @@ input[type="text"].popform__input-text {
   .services__item:after {
     display: none !important; }
   .geo {
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 81px, url("../img/geo-bg.png") no-repeat top center; }
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 11px, url("../img/geo-bg.png") no-repeat top center; }
   .revservices .revservices__row {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -4441,6 +4444,10 @@ input[type="text"].popform__input-text {
       margin-top: 25px; }
     .opt__col .opt__item {
       height: auto; } }
+
+@media (max-width: 877px) {
+  .geo {
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 41px, url("../img/geo-bg.png") no-repeat top center; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -4573,7 +4580,8 @@ input[type="text"].popform__input-text {
       max-height: 100%;
       width: auto; }
   .geo {
-    padding-top: 40px; }
+    padding-top: 40px;
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) -4px, url("../img/geo-bg.png") no-repeat top center; }
   .geo__heading {
     font-size: 37px; }
   .revslider__slide-row {
@@ -4629,6 +4637,11 @@ input[type="text"].popform__input-text {
   .get__right {
     width: 100%;
     padding: 20px; } }
+
+@media (max-width: 720px) {
+  .geo {
+    padding-top: 40px;
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 12px, url("../img/geo-bg.png") no-repeat top center; } }
 
 @media only screen and (max-width: 640px) {
   .contain {
@@ -4856,7 +4869,10 @@ input[type="text"].popform__input-text {
     line-height: 1.2;
     font-size: 20px; }
   .get__text {
-    margin-top: 11px; } }
+    margin-top: 11px; }
+  .geo {
+    padding-top: 40px;
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 26px, url("../img/geo-bg.png") no-repeat top center; } }
 
 @media (max-width: 555px) {
   .footinfo {
@@ -4963,7 +4979,7 @@ input[type="text"].popform__input-text {
     .services__item:not(:last-child) {
       margin-bottom: 21px; }
   .geo {
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px; }
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 32px; }
   .geo__heading {
     font-size: 32px; }
   .revservices .revservices__item {
@@ -5025,6 +5041,12 @@ input[type="text"].popform__input-text {
   .popform__title {
     font-size: 24px; } }
 
+@media (max-width: 423px) {
+  .geo {
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 65px; }
+  .geo__subheading {
+    max-width: 322px; } }
+
 @media only screen and (max-width: 375px) {
   .banner-advantages__list .advantages__icon-w {
     height: 30px; }
@@ -5063,7 +5085,7 @@ input[type="text"].popform__input-text {
   .banner__title {
     font-size: 25px; }
   .geo {
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 101px; }
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 73px; }
   .revslider__slide {
     padding: 30px 15px; }
   .revslider__slide-title {

@@ -139,7 +139,7 @@
 
 @media (max-width : 1366px) {
   .geo {    
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px, url("../img/geo-bg.png") no-repeat top center;
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) -39px, url("../img/geo-bg.png") no-repeat top center;
     background-size: 100% !important;
     height: auto;
     padding-bottom: calc(100vw / 3);
@@ -362,9 +362,10 @@
 .advants__col {
   padding: 0 10px;
 }
-.geo {    
-
-}
+  .geo {    
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 1px, url("../img/geo-bg.png") no-repeat top center;
+    background-size: 100% !important;    
+  }
 .geo__map-w {
   width: calc(100% - 20px);
   transform: translate(0px, 0%);
@@ -576,7 +577,7 @@
 }
 
 .geo {    
-  background: url("../img/map1.png") no-repeat calc(50% - 60px) 81px, url("../img/geo-bg.png") no-repeat top center;      
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 11px, url("../img/geo-bg.png") no-repeat top center;      
 }
 .revservices {
 
@@ -720,6 +721,12 @@
 }
 
 } //991
+
+@media (max-width : 877px) {
+.geo {    
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 41px, url("../img/geo-bg.png") no-repeat top center;      
+}
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -902,6 +909,8 @@
 }
 .geo {
   padding-top: 40px;
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) -4px, url("../img/geo-bg.png") no-repeat top center;      
+
 }
 .geo__heading {
   font-size: 37px;
@@ -980,6 +989,14 @@
   padding: 20px;
 }
 }  //767    
+
+@media (max-width : 720px) {
+.geo {
+  padding-top: 40px;
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 12px, url("../img/geo-bg.png") no-repeat top center;      
+
+}
+}
 
 @media only screen and (max-width : 640px) {
   .contain {
@@ -1277,6 +1294,14 @@ h2,
 .get__text {
   margin-top: 11px;
 }
+
+
+.geo {
+  padding-top: 40px;
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 26px, url("../img/geo-bg.png") no-repeat top center;      
+
+}
+
 }//575
 
 @media (max-width : 555px) {
@@ -1397,7 +1422,7 @@ h2,
   }
 }
 .geo {    
-  background: url("../img/map1.png") no-repeat calc(50% - 60px) 91px;      
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 32px;      
 }
 .geo__heading {
   font-size: 32px;
@@ -1471,6 +1496,17 @@ h2,
   }
 }//480
 
+@media (max-width : 423px) {
+.geo {    
+  background: url("../img/map3.png") no-repeat calc(50% - 11px) 65px;
+}
+
+.geo__subheading {
+  max-width: 322px;
+}
+
+}
+
 @media only screen and (max-width : 375px) {
   .banner-advantages__list .advantages__icon-w {
     height: 30px;
@@ -1514,7 +1550,7 @@ h2,
     font-size: 25px;
   }
   .geo {    
-    background: url("../img/map1.png") no-repeat calc(50% - 60px) 101px;      
+    background: url("../img/map3.png") no-repeat calc(50% - 11px) 73px;      
   }
   .revslider__slide {
     padding: 30px 15px;

@@ -1108,12 +1108,14 @@ h1 {
 .geo {
   padding-top: 79px;
   background:  
-  url("../img/map1.png") $nr center -9px,
+  url("../img/map3.png") $nr center -159px,
   url("../img/geo-bg.png") $nr top center;
   background-color: rgb(29, 24, 104) !important;
   height: 640px;
   overflow: hidden;
 }
+
+
 
 .geo__heading {
   font-weight: 700;
