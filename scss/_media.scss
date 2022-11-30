@@ -1296,6 +1296,10 @@ h2,
 }
 
 
+
+
+
+
 .geo {
   padding-top: 40px;
   background: url("../img/map3.png") no-repeat calc(50% - 11px) 26px, url("../img/geo-bg.png") no-repeat top center;      
@@ -1493,6 +1497,33 @@ h2,
 }
   .popform__title {
    font-size: 24px; 
+  }
+  .top__contacts {
+    display: none;
+  }
+  .logo {
+    display: flex;    
+    align-items: center;      
+              justify-content: space-between;  
+            flex-direction: row;
+            width: calc(80%);
+            order: -2;            
+  }
+  .top__row {    
+            align-items: center;            
+  }
+  .logo__img-wrap {
+    width: 40%;
+    margin-right: 7px;
+  }
+  .logo__slogan {
+  width: 60%;  
+  }
+  .toggle-mnu {
+    position: absolute;
+  }
+  .col-mnu {
+    width: 20%;
   }
 }//480
 

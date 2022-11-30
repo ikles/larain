@@ -5039,7 +5039,40 @@ input[type="text"].popform__input-text {
   .popform {
     padding: 55px 20px 30px 20px; }
   .popform__title {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .top__contacts {
+    display: none; }
+  .logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: calc(80%);
+    -webkit-order: -2;
+        -ms-flex-order: -2;
+            order: -2; }
+  .top__row {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center; }
+  .logo__img-wrap {
+    width: 40%;
+    margin-right: 7px; }
+  .logo__slogan {
+    width: 60%; }
+  .toggle-mnu {
+    position: absolute; }
+  .col-mnu {
+    width: 20%; } }
 
 @media (max-width: 423px) {
   .geo {
